@@ -1,0 +1,49 @@
+CLASSIFICATION MODEL EVALUATION RESULTS
+========================================
+
+Dataset: FARS (Fatality Analysis Reporting System)
+Number of observations: 100,968
+Number of features: 29
+Target variable: INJURY_SEVERITY
+
+Train-test split: 80% training, 20% testing
+Cross-validation: 3-fold StratifiedKFold
+Hyperparameter tuning: RandomizedSearchCV
+Scoring metric: Macro F1-score
+
+TEST SET PERFORMANCE
+--------------------
+
+Model: Random Forest
+Accuracy:          0.790185
+Balanced Accuracy: 0.555241
+Macro F1-score:    0.563396
+CV Macro F1-score: 0.557697
+
+Model: Logistic Regression
+Accuracy:          0.803655
+Balanced Accuracy: 0.560090
+Macro F1-score:    0.559283
+CV Macro F1-score: 0.548521
+
+Model: Decision Tree
+Accuracy:          0.791522
+Balanced Accuracy: 0.538854
+Macro F1-score:    0.546059
+CV Macro F1-score: 0.544740
+
+Model: Decision Tree + SMOTE
+Accuracy:          0.786174
+Balanced Accuracy: 0.549934
+Macro F1-score:    0.542896
+CV Macro F1-score: 0.546896
+
+OBSERVATIONS
+------------
+
+- Random Forest achieved the highest test Macro F1-score.
+- Logistic Regression achieved the highest test Accuracy and Balanced Accuracy.
+- Performance varies considerably across injury severity classes.
+- Rare classes remain challenging due to class imbalance.
+
+Note: These metrics represent the reported test-set results.
