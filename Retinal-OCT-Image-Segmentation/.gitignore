@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+venv/
+
+# Dataset files
+data/
+datasets/
+*.tif
+*.tiff
+
+# Model checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# Temporary files
+.DS_Store
