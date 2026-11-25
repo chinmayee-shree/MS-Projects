@@ -1,1 +1,28 @@
+# Python cache files
+__pycache__/
+*.py[cod]
 
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Dataset files
+*.csv
+*.xlsx
+*.xls
+
+# Temporary files
+*.tmp
+*.log
+
+# Model files
+*.pkl
+*.joblib
+
+# Operating system files
+.DS_Store
+Thumbs.db
