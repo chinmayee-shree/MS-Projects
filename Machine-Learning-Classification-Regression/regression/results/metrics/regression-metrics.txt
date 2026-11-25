@@ -1,0 +1,58 @@
+REGRESSION MODEL EVALUATION RESULTS
+=====================================
+
+Dataset: fitting-results.csv
+Number of observations: 19,992
+Number of input features: 5
+Number of target variables: 4
+
+Train-validation-test split:
+- Training: 60%
+- Validation: 20%
+- Testing: 20%
+
+Random state: 42
+Cross-validation: 5-fold GridSearchCV
+Hyperparameter tuning metric: Negative Root Mean Squared Error
+
+BEST MODEL
+----------
+
+Random Forest Regressor was selected for all four target variables based on validation RMSE.
+
+TEST SET PERFORMANCE
+--------------------
+
+Target: a
+Best Model: Random Forest Regressor
+RMSE: 2.708827
+MAE:  0.570554
+R²:   0.961425
+
+Target: mu
+Best Model: Random Forest Regressor
+RMSE: 1.992994
+MAE:  0.492784
+R²:   0.961184
+
+Target: tau
+Best Model: Random Forest Regressor
+RMSE: 0.048225
+MAE:  0.023313
+R²:   0.986901
+
+Target: a0
+Best Model: Random Forest Regressor
+RMSE: 0.009748
+MAE:  0.004537
+R²:   0.688710
+
+OBSERVATIONS
+------------
+
+- Random Forest achieved the best validation performance for all four target variables.
+- The model achieved high R² scores for a, mu, and tau.
+- The R² score for a0 was lower, indicating comparatively weaker explanatory performance.
+- The low variability of a0 should be considered when interpreting its evaluation metrics.
+
+Note: These metrics represent the reported test-set results.
