@@ -1,5 +1,3 @@
-# Retinal OCT Image Segmentation using K-Means
-
 # Retinal OCT Cyst Segmentation Using K-Means Clustering
 
 ## Project Overview
