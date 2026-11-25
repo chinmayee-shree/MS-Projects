@@ -74,7 +74,7 @@ for image_name in files:
         print("Ground truth missing:", image_name)
         continue
 
-    # Resize ground truth if necessary
+    # Resize ground truth (if necessary)
     if gt_mask.shape != cyst_mask_binary.shape:
 
         gt_mask = cv2.resize(
