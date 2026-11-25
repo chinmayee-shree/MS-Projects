@@ -92,5 +92,4 @@ retinal-oct-segmentation/
 
 ## Author
 
-Chinmayee Shree N R
-Developed as a student research and technical project exploring medical image processing and retinal OCT segmentation.
+Chinmayee Shree N R - Developed as a student research and technical project exploring medical image processing and retinal OCT segmentation.
