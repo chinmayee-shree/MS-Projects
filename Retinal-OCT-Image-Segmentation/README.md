@@ -36,15 +36,15 @@ The initial experiment was conducted on 10 OCT images.
 
 The following examples show the original OCT images, segmentation outputs, and corresponding ground-truth annotations.
 
-![Segmentation Sample 1](results/segmentation_samples/sample_01.png)
+![Sample 1](results/segmentation_samples/sample%201.png)
 
-![Segmentation Sample 2](results/segmentation_samples/sample_02.png)
+![Sample 2](results/segmentation_samples/sample%202.png)
 
-![Segmentation Sample 3](results/segmentation_samples/sample_03.png)
+![Sample 3](results/segmentation_samples/sample%203.png)
 
 ### Evaluation Graph
 
-![IoU and Dice Evaluation Histogram](results/metrics/iou_dice_histogram.png)
+![IoU and Dice Histogram](results/metrics/histogram.png)
 
 ## Limitations
 
