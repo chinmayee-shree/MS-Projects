@@ -1,0 +1,11 @@
+Retinal OCT Cyst Segmentation - Evaluation Results
+
+Method: K-means clustering (K=4)
+Number of images evaluated: 10
+
+Average IoU: 0.4757
+Average Dice: 0.6380
+
+Note:
+These results are from an initial experiment using classical image processing and K-means clustering.
+They are based on a small sample of 10 images and should not be interpreted as clinical performance.
