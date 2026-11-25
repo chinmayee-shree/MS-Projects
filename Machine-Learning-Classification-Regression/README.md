@@ -61,7 +61,7 @@ machine-learning-coursework/
 ├── .gitignore
 │
 ├── notebooks/
-│   └── machine_learning_coursework.ipynb
+│   └── Classification_Regression.ipynb
 │
 ├── classification/
 │   ├── README.md
