@@ -1,0 +1,73 @@
+FOOD IMAGE SEGMENTATION – MODEL EVALUATION
+
+Dataset: FoodSeg103
+Number of Classes: 104 (including background)
+Training Images: 4,484
+Validation Images: 499
+Test Images: 2,135
+
+MODEL 1: BASELINE U-NET
+
+Architecture:
+- U-Net
+- Pretrained ResNet34 encoder
+- ImageNet pretrained weights
+
+Input Image Size: 256 x 256
+Batch Size: 16
+Learning Rate: 0.0001
+Optimizer: Adam
+
+Note: Overall evaluation metrics were not available in the recorded results.
+
+MODEL 2: IMPROVED CNN – DEEPLABV3+
+
+Architecture:
+- DeepLabV3+
+- Pretrained ResNet50 encoder
+- Data augmentation
+- Horizontal-flip test-time augmentation
+
+Input Image Size: 448 x 448
+Batch Size: 4
+Maximum Epochs: 40
+Optimizer: AdamW
+Learning Rate: 0.0001 (maximum)
+
+Note: Overall evaluation metrics were not available in the recorded results.
+
+MODEL 3: TRANSFORMER – SEGFORMER-B2
+
+Architecture:
+- SegFormer-B2
+- Pretrained Hugging Face checkpoint
+- Fine-tuned for 104 segmentation classes
+- Data augmentation
+- Test-time augmentation
+
+Input Image Size: 512 x 512
+Batch Size: 4
+Epochs: 30 (maximum)
+Optimizer: AdamW
+Learning Rate: 0.00006
+
+Best Validation mIoU: 0.4073
+Best Validation Epoch: 28
+Test mIoU: 0.3544
+
+SINGLE-IMAGE DEMONSTRATION
+
+Pixel Accuracy: 0.9857
+Mean IoU: 0.9577
+Mean Dice Score: 0.9783
+
+Note: These metrics belong to one demonstrated image only.
+They are not aggregate test-set metrics.
+
+EVALUATION NOTES
+
+- Pixel Accuracy measures the proportion of correctly classified pixels.
+- Mean IoU measures the average intersection-over-union across classes.
+- Mean Dice measures overlap between predicted and ground-truth masks.
+- The SegFormer test mIoU is the reported held-out test result.
+- U-Net and DeepLabV3+ aggregate metrics should be added when available.
