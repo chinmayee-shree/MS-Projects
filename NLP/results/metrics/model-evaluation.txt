@@ -1,1 +1,40 @@
+NLP PROJECT - MODEL EVALUATION RESULTS
 
+Task: Contextual idiom-image matching
+Model: CLIP (ViT-B/32)
+
+TEST SET RESULTS
+
+1. ZERO-SHOT CLIP
+
+Row Accuracy:  0.4074
+Precision:     0.1111
+Recall:        0.1111
+F1-score:      0.1111
+Group Accuracy: 0.1111
+
+2. TRAINED CLIP-BASED MODEL
+
+Classifier: Logistic Regression
+
+Row Accuracy:  0.9259
+Precision:     0.8889
+Recall:        0.8889
+F1-score:      0.8889
+Group Accuracy: 0.8889
+
+OBSERVATIONS
+
+- The trained CLIP-based model performed substantially
+  better than zero-shot CLIP on the test set.
+- The trained model achieved 92.59% row accuracy.
+- The trained model achieved 88.89% group accuracy.
+- Group accuracy measures whether the correct image
+  was ranked first among the three candidate images.
+
+DATA AUGMENTATION NOTE
+
+The LLM-based augmentation stage generated 77 unique training groups. Only 1 group passed the augmentation
+quality filters, giving 1.3% coverage.
+
+Note: All reported evaluation metrics above are from the test set.
