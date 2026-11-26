@@ -19,5 +19,4 @@ Macro Recall: 0.3792
 Macro F1-score: 0.3629
 
 Conclusion:
-The pretrained ResNet50 achieved substantially better test performance
-than the CustomCNN trained from scratch.
+The pretrained ResNet50 achieved substantially better test performance than the CustomCNN trained from scratch.
