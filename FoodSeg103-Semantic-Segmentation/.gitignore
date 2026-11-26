@@ -1,1 +1,31 @@
+# Python cache files
+__pycache__/
+*.py[cod]
 
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment variables
+.env
+
+# Dataset files
+data/
+FoodSeg103/
+*.zip
+
+# Model weights and checkpoints
+*.pth
+*.pt
+*.keras
+checkpoints/
+
+# Temporary and system files
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
