@@ -1,1 +1,10 @@
-
+numpy
+matplotlib
+opencv-python
+torch
+torchvision
+segmentation-models-pytorch
+albumentations
+transformers
+accelerate
+timm
