@@ -1,0 +1,23 @@
+Bird Species Classification - Test Results
+Dataset: CUB-200-2011
+Number of classes: 200
+Test images: 5,794
+
+1. ResNet50 (Pretrained)
+Accuracy: 0.7969
+Macro Precision: 0.8021
+Macro Recall: 0.7987
+Macro F1-score: 0.7961
+Weighted Precision: 0.8011
+Weighted Recall: 0.7969
+Weighted F1-score: 0.7947
+
+2. CustomCNN (Trained from Scratch)
+Accuracy: 0.3754
+Macro Precision: 0.3663
+Macro Recall: 0.3792
+Macro F1-score: 0.3629
+
+Conclusion:
+The pretrained ResNet50 achieved substantially better test performance
+than the CustomCNN trained from scratch.
