@@ -70,6 +70,26 @@ The SegFormer-B2 experiment achieved:
 
 The notebook also contains experiments with the baseline U-Net and DeepLabV3+. Their results can be added here once the corresponding evaluation outputs are collected.
 
+## Visual Results
+
+### 1. Input Image and Predicted Segmentation
+
+This figure shows the original food image alongside the segmentation predicted by the model.
+
+![Input image and predicted segmentation](results/figures/input-predicted-sample.png)
+
+### 2. Input Image and Ground-Truth Segmentation
+
+This figure compares the input food image with its corresponding ground-truth segmentation mask.
+
+![Input image and ground-truth segmentation](results/figures/input-segmentation-sample.png)
+
+### 3. Segmentation Performance Metrics
+
+This figure summarizes the segmentation model's evaluation performance.
+
+![Segmentation performance metrics](results/figures/segmentation-performance-metrics.png)
+
 ### Single-Image Demonstration
 
 For one demonstrated image, the segmentation evaluation produced:
