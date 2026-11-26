@@ -1,0 +1,40 @@
+# Model Evaluation – Poirot Inspired Text Generation
+
+## Dataset and Sequence Information
+- Total training sequences: 66,527
+- Sequence length: 40
+- Maximum vocabulary size: 10,000
+- Batch size: 128
+
+## Model Architecture
+- Embedding dimension: 200
+- LSTM layers: 2
+- LSTM units per layer: 256
+- Dropout: 0.2
+- Output layer: Dense (10,000 units, softmax)
+- Total parameters: 5,563,280
+
+## Training Configuration
+- Optimizer: Adam
+- Learning rate: 0.001
+- Loss function: Sparse Categorical Crossentropy
+- Maximum epochs: 30
+- Actual epochs completed: 9
+- Early stopping patience: 4
+- Best validation loss: 5.8907 (Epoch 5)
+
+## Training Outcome
+- Training stopped after Epoch 9 due to early stopping.
+- Best validation loss was achieved at Epoch 5.
+- The model demonstrated limited next-word prediction performance.
+
+## Text Generation
+- Sampling temperature: Configurable
+- Top-K: 200
+- Top-P: 0.95
+- Demonstration prompt: "hercule poirot said"
+
+## Limitations
+- Generated text was not consistently coherent or grammatically fluent.
+- No independent test-set evaluation was performed.
+- Results should be considered experimental due to the limited training corpus and model performance.
