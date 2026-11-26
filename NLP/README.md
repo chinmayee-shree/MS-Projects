@@ -1,4 +1,4 @@
-# Contextual Idiom–Image Matching Using CLIP
+# Contextual Idiom Image Matching Using CLIP
 
 ## Project Overview
 
